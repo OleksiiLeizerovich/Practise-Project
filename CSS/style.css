@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cabin;
+  }
+  
+  body {
+    margin: 0px auto;
+    width: 1440px;
+    background-color: #eeeeee;
+    position: relative;
+  }
+  
+  /* header menu */
+
+  .burger-menu-overlay{
+    display: none;
+  }
+  
+  header {
+    position: sticky;
+    width: 1440px;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+  
+  .menu1 {
+    display: flex;
+    height: 72px;
+    padding: 16px 52px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background: #10bbd5;
+    box-sizing: border-box;
+  }
+  
+  .cart {
+    background: #10bbd5;
+    border: none;
+    position: relative;
+  }
+  
+  .cart-num {
+    position: absolute;
+    top: 8px;
+    left: 18px;
+  }
+  
+  .pay {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  
+  .burger-menu-btn {
+    display: none;
+  }
+  
+  .wallet {
+    color: #f8fdfe;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  
+  .menu2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0px 52px;
+    box-sizing: border-box;
+  }
+  
+  .user-btns {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .user-btn{
+    background-color: transparent;
+    border: none;
+  }
+  
+  /* main page */
+  
+  .chat {
+    position: fixed;
+    top: auto;
+    right: 28px;
+    background-color: #10bbd5;
+    border-radius: 50%;
+    z-index: 3;
+    border: none;
+  }
+  
+  .title {
+    color: #1f1f1f;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 24px 52px;
+    box-sizing: border-box;
+    padding-bottom: 23px;
+    border-bottom: 2px solid gray;
+  }
+  
+  .cards-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 305px;
+    height: 512px;
+    box-sizing: border-box;
+    padding: 32px;
+    position: relative;
+    align-items: center;
+    gap: 16px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin: 16px auto;
+  }
+  
+  .info {
+    display: flex;
+    position: absolute;
+    gap: 10px;
+    left: 35px;
+    z-index: 2;
+  }
+  
+  .hit {
+    border-radius: 4px;
+    background: #4200ff;
+    color: #f8fdfe;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    box-sizing: border-box;
+    padding: 8px;
+  }
+  
+  .new {
+    border-radius: 4px;
+    background: #af39e7;
+    color: #f8fdfe;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    box-sizing: border-box;
+    padding: 8px;
+  }
+  
+  .sale {
+    border-radius: 4px;
+    background: #ea33c0;
+    color: #f8fdfe;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    box-sizing: border-box;
+    padding: 8px;
+  }
+  
+  .book-cover {
+    width: 172px;
+  }
+  
+  .title-n-price {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .book-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .name {
+    width: auto;
+    height: 31px;
+    border-bottom: 1px solid gray;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+    color: #1f1f1f;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    overflow: hidden;
+  }
+  
+  .author {
+    color: #8e8e8e;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  
+  .sale-price {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .price {
+    color: #e90000;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+  
+  .old-price {
+    color: #8e8e8e;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    text-decoration: line-through;
+  }
+  
+  .add {
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 4px;
+    background: #4c394e;
+    color: #f8fdfe;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+  }
+  
+  .end {
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 4px;
+    background: #4d762d;
+    color: #f8fdfe;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+  }
+  
+  /* footer */
+  
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4c394e;
+    width: auto;
+    height: 88px;
+    box-sizing: border-box;
+    padding: 32px 50px;
+  }
+  
+  footer span {
+    color: #f8fdfe;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  
+  /* Tablet */
+  
+  @media (max-width: 1024px) {
+    body {
+      width: 85%;
+    }
+  
+    header,
+    .menu1,
+    .menu2 {
+      width: 100%;
+      padding: 16px 24px;
+    }
+  
+    .menu1 {
+      height: 60px;
+    }
+  
+    .menu2 {
+      padding: 0px 24px;
+    }
+  
+    .title {
+      font-size: 28px;
+      margin: 20px 24px;
+    }
+  
+    .cards-row {
+      justify-content: center;
+    }
+  
+    .card {
+      width: 45%;
+      height: auto;
+      padding: 24px;
+    }
+  
+    .book-cover {
+      width: 120px;
+    }
+  
+    .name {
+      font-size: 18px;
+      padding-bottom: 20px;
+    }
+  
+    .price,
+    .old-price {
+      font-size: 20px;
+    }
+  
+    footer {
+      padding: 24px;
+    }
+  }
+  
+  /* Phone */
+  
+  @media (max-width: 768px) {
+    body {
+      width: 85%;
+    }
+  
+    header,
+    .menu1,
+    .menu2 {
+      width: 100%;
+      padding: 12px 16px;
+    }
+  
+    .menu1 {
+      height: 50px;
+    }
+  
+    .burger-menu {
+      width: 16px;
+    }
+  
+    .burger-menu-btn {
+      background-color: transparent;
+      border: none;
+      display: inline;
+    }
+  
+    .menu2 {
+      display: none;
+    }
+  
+    .title {
+      font-size: 24px;
+      margin: 16px;
+    }
+  
+    .cards-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+      height: auto;
+      padding: 16px;
+    }
+  
+    .book-cover {
+      width: 100px;
+    }
+  
+    .name {
+      font-size: 16px;
+      padding-bottom: 16px;
+    }
+  
+    .price,
+    .old-price {
+      font-size: 18px;
+    }
+  
+    .add,
+    .end {
+      font-size: 14px;
+      padding: 6px 16px;
+    }
+  
+    footer {
+      padding: 16px;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    footer span {
+      font-size: 14px;
+    }
+  
+    /* Burger menu */
+
+    .burger-menu-overlay {
+      position: fixed;
+      display: block;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 1000;
+      transition: left 0.3s ease-in-out;
+    }
+  
+    .burger-menu-overlay.active {
+      left: 0;
+    }
+  
+    .burger-menu-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 100%;
+      background-color: #10bbd5;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .close-menu-btn {
+      background: none;
+      border: none;
+      color: #f8fdfe;
+      font-size: 24px;
+      cursor: pointer;
+      align-self: flex-end;
+    }
+  
+    .menu-items {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .menu-items span {
+      color: #f8fdfe;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  
+    .menu-items span:hover {
+      color: #10bbd5;
+    }
+  }
+  
